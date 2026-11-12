@@ -1,6 +1,6 @@
 # DioBank
 
-Um chat demonstrativo em português para entender saldos, transações e padrões de gasto. O cenário é um app bancário: o cliente já está no banco quando consulta suas finanças.
+Um chat demonstrativo em português para entender saldos, transações e padrões de gasto. O cenário é um app bancário: o cliente já está no banco quando consulta suas finanças. **O projeto foi implementado com o Codex**, a partir do desafio e da especificação registrada neste repositório. O Lovable não foi usado.
 
 > **Demonstração:** os dados deste repositório foram criados para o projeto. Nenhum banco está conectado. As respostas são calculadas localmente, sem modelo de IA, sem conta de usuário e sem enviar dados a um serviço externo.
 
@@ -54,9 +54,9 @@ No Windows, o campo do comando pode exigir o caminho absoluto de `uvx.exe`, que 
 
 Fonte: [mcp-server-plaid no PyPI](https://pypi.org/project/mcp-server-plaid/).
 
-## Prompt preparado para Lovable
+## Especificação usada na implementação com Codex
 
-O guia das páginas 25–28 não foi incluído na pasta; este prompt foi elaborado a partir do enunciado do desafio. Ele está pronto para colar no modo de chat do Lovable e discutir antes de construir. Não houve execução no Lovable nesta entrega.
+O guia das páginas 25–28 não foi incluído na pasta. A especificação abaixo foi elaborada a partir do enunciado do desafio e serviu como referência para implementar o app diretamente com o Codex. Não é um prompt enviado ao Lovable.
 
 > **OpenSpec — DioBank:** Crie um web app responsivo em português do Brasil para um cliente que já está no app do banco e quer entender contas, saldos, transações e padrões de gasto. Use React e TypeScript. Construa uma interface bancária sóbria em azul-marinho, verde e fundo claro, com resumo de duas contas fictícias, lista de transações filtrável por data/categoria/conta e chat com sugestões de perguntas. Use exclusivamente dados locais claramente identificados como fictícios, sem login e sem declarar conexão bancária ou IA real. A referência temporal é 31/10/2026. O saldo é um snapshot dessa data; consultas históricas usam os registros disponíveis. Use valores em centavos e declare a regra de sinais usada pelo provedor. O chat deve responder a saldo, transações, gastos por período/categoria/conta, categoria de maior gasto, estabelecimentos recorrentes e comparação dos dois últimos meses completos no recorte; para pergunta não suportada, explicar a limitação. Combine os filtros correntes com os citados na pergunta e mostre o período respondido. Não invente dados. Inclua tratamento de listas vazias, teclado, foco visível e layout móvel. Gere README com origem e limitações dos dados e instruções de evolução para Plaid Sandbox por backend seguro.
 
